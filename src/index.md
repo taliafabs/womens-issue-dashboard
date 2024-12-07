@@ -73,7 +73,7 @@ toc: false
 ---
 ## Load and transform the G7 data
 ```js
-const launches = FileAttachment("data/maternal-mortality.csv").csv({typed: true});
+// const launches = FileAttachment("data/maternal-mortality.csv").csv({typed: true});
 ```
 
 ## Next steps

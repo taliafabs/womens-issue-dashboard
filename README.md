@@ -1,4 +1,6 @@
-# Womens Issue Dashboard
+# Maternal Mortality Dashboard
+
+This dashboard was created by Talia Fabregas, Tara Chakkitharra, Rayan Awad Alim, Luka Tosic, and Satoka Majima using Observable.
 
 This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
 

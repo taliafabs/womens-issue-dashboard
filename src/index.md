@@ -38,30 +38,6 @@ toc: false
 }
 </div>
 
-```js
-mapSvgWithIds = {
-  const map = d3.select(mapSvgOriginal.cloneNode(true));
-  const statesGroup = map.select("g.states");
-  const statesPaths = statesGroup.selectAll("path");
-
-  statesPaths.each(function(_d, i) {
-    const pathEl = d3.select(this);
-    const [stateClassName] = pathEl.attr("class").split(" ");
-    const stateNameId = stateClassName
-      .replace("state-", "")
-      .replace(/-/gi, " ");
-    pathEl.attr("data-id", stateNameId);
-    pathEl.attr("class", null);
-    pathEl.attr("fill", null);
-  });
-
-  map.selectAll("text").each(function(_d, i) {
-    d3.select(this).attr("data-id", textData[i]);
-  });
-
-  return map.node();
-}
-```
 
 ---
 # U.S. States with the Highest Maternal Mortality Rates in Comparison with the G7, High-Income Countries, and Middle-Income Countries

@@ -24,7 +24,7 @@ combined_data <- dplyr::bind_rows(
 race_categories <- c("Total", "Asian, Non-Hispanic", "Non-Hispanic Black", "Non-Hispanic White", "Hispanic")
 
 csv_data <- combined_data |>
-    dplyr::filter(Category %in% race_categories) |>
+    dplyr::filter(Category %in% race_categories, Year==2020) |>
     dplyr::mutate(rate_100k = `Maternal Mortality Rate`) |>
     dplyr::select(Category, Year, rate_100k)
 

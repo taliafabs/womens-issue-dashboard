@@ -8,6 +8,6 @@ g7_countries <- c("Canada", "United States", "United Kingdom", "France", "German
 maternal_mortality_g7 <- read_csv(".data/number-of-maternal-deaths-by-region.csv") |>
     dplyr::filter(Entity %in% g7_countries, year >= 1970) |>
     dplyr::mutate(rate_100k = `Estimated maternal deaths`)|>
-    dplyr::select(Entity, rate_100k)
+    dplyr::select(Entity, year, rate_100k)
 
 cat(readr::format_csv(maternal_mortality_g7))

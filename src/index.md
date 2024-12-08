@@ -9,36 +9,24 @@ toc: false
 
 ```js
 // maternal mortality rate g7 data since 1970
-const MaternalMortalityG7 = FileAttachment("data/maternal-mortality-g7.csv")
+const g7 = FileAttachment("data/maternal-mortality-g7.csv")
+const states = FileAttachment("data/maternal-mortality-rate-by-state-2024.json")
 ```
 
-# Maternal Mortality Overview
+# Maternal Mortality Rates in the United States (Tara)
 
-# Where is the U.S. maternal mortality rate at in comparison with the G7?
+---
+
+
+
+# How the United States Compares to the G7
+
+
+
 
 <div class="card">${
     resize((width)=> Plot.plot({
-        title: "title",
-        subtitle: "subtitle",
-        width,
-        y: {grid: true, label: "Maternal Mortality Rate (Maternal deaths per 100k live births)"},
-        marks: [
-          Plot.ruleY([0]),
-          Plot.lineY(aapl, {x: "Year", y: "Close", tip: true})
-        ]
-    })
-    )
-}
-</div>
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="components/g7linegraph.js"></script>
-
----
-# Maternal Mortality Rates across the United States
-<div class="dashboard">${
-    resize((width)=> Plot.plot({
-        title: "State maternal mortality rates",
+        title: "How has US Maternal Mortality Changed?",
         subtitle: "subtitle",
         width
     })
@@ -49,6 +37,8 @@ const MaternalMortalityG7 = FileAttachment("data/maternal-mortality-g7.csv")
 ---
 
 # U.S. States with the Highest Maternal Mortality Rates in Comparison with the G7, High-Income Countries, and Middle-Income Countries
+# Racial Disparities in U.S. Maternal Mortality 2022
+
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
   <div class="card">${
     resize((width) => Plot.plot({
@@ -80,11 +70,15 @@ const MaternalMortalityG7 = FileAttachment("data/maternal-mortality-g7.csv")
 
 ---
 
-## Racial Disparities
+## Racial Disparities 2022
 
 ```js
-// const launches = FileAttachment("data/maternal-mortality.csv").csv({typed: true});
+const RaceData = FileAttachment("data/maternal-mortality-race.csv").csv({typed: true});
 ```
+```js
+
+```
+
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
   <div class="card">${

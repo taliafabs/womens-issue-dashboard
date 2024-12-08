@@ -2,12 +2,20 @@
 toc: false
 ---
 <div class="hero">
-  <h1>Maternal Mortality when i edit this the website changes live</h1>
+  <h1>Maternal Mortality</h1>
   <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
   <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
 </div>
 
+```js
+// maternal mortality rate g7 data since 1970
+const MaternalMortalityG7 = FileAttachment("data/maternal-mortality-g7.csv")
+```
+
+# Maternal Mortality Overview
+
 # Where is the U.S. maternal mortality rate at in comparison with the G7?
+
 <div class="card">${
     resize((width)=> Plot.plot({
         title: "title",
@@ -38,8 +46,8 @@ toc: false
 }
 </div>
 
-
 ---
+
 # U.S. States with the Highest Maternal Mortality Rates in Comparison with the G7, High-Income Countries, and Middle-Income Countries
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
   <div class="card">${
@@ -71,7 +79,9 @@ toc: false
 </div>
 
 ---
-## Load and transform the G7 data
+
+## Racial Disparities
+
 ```js
 // const launches = FileAttachment("data/maternal-mortality.csv").csv({typed: true});
 ```

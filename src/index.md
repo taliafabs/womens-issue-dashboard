@@ -17,12 +17,9 @@ const states = FileAttachment("data/maternal-mortality-rate-by-state-2024.json")
 
 ---
 
-
+Maternal mortality in the twenty-first century
 
 # How the United States Compares to the G7
-
-
-
 
 <div class="card">${
     resize((width)=> Plot.plot({
@@ -36,8 +33,7 @@ const states = FileAttachment("data/maternal-mortality-rate-by-state-2024.json")
 
 ---
 
-# U.S. States with the Highest Maternal Mortality Rates in Comparison with the G7, High-Income Countries, and Middle-Income Countries
-# Racial Disparities in U.S. Maternal Mortality 2022
+# Who is most affected by the United States' High Maternal Mortality Rate?
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
   <div class="card">${
@@ -75,8 +71,9 @@ const states = FileAttachment("data/maternal-mortality-rate-by-state-2024.json")
 ```js
 const RaceData = FileAttachment("data/maternal-mortality-race.csv").csv({typed: true});
 ```
-```js
 
+```js
+import * as Plot from "@nmp:observablehq/plot"
 ```
 
 
